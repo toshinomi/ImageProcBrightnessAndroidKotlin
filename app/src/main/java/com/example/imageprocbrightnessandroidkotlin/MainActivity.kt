@@ -40,8 +40,8 @@ class MainActivity : AppCompatActivity() {
                 var alphaValue = "$p1 %"
                 mTextViewAlphaValue?.text = alphaValue
 
-                var rightness = Brightness()
-                var mutableBitmap = rightness.goImageProcessing(mBitmap, p1)
+                var brightness = Brightness()
+                var mutableBitmap = brightness.goImageProcessing(mBitmap, p1)
                 mImageView.setImageBitmap(mutableBitmap.copy(Bitmap.Config.ARGB_8888, false))
             }
 
